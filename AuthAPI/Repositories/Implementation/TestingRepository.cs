@@ -1,6 +1,8 @@
-﻿namespace AuthAPI.Repositories.Implementation
+﻿using AuthAPI.Repositories.Interface;
+
+namespace AuthAPI.Repositories.Implementation
 {
-    public class TestingRepository
+    public class TestingRepository : ITestingRepository
     {
     }
 }
