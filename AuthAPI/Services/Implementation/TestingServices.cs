@@ -1,6 +1,6 @@
 ﻿namespace AuthAPI.Services.Implementation
 {
-    public class TestingServices
+    public class TestingServices : ITestingServices
     {
     }
 }
