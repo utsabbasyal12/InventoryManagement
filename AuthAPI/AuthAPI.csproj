@@ -7,20 +7,16 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Dapper" Version="2.0.123" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.5" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="API\Controllers\" />
     <Folder Include="API\ResponseModel\" />
-    <Folder Include="API\RequestModel\" />
     <Folder Include="Database\Table\" />
     <Folder Include="Database\StoreProcedure\" />
     <Folder Include="Mapping\" />
-    <Folder Include="Repositories\Implementation\" />
-    <Folder Include="Repositories\Interface\" />
-    <Folder Include="Services\Interface\" />
-    <Folder Include="Services\Implementation\" />
   </ItemGroup>
 
 </Project>
