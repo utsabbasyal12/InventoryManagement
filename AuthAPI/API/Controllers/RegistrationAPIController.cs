@@ -1,5 +1,6 @@
 ﻿using AuthAPI.API.RequestModel;
 using AuthAPI.Repositories.Interface;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -17,6 +18,7 @@ namespace AuthAPI.API.Controllers
         }
 
         [HttpPost]
+        [AllowAnonymous]
         public async Task<IActionResult> Register(UserModel userDto)
         {
             var existingUser = await _userRepository.GetUserByUsername(userDto.Username);

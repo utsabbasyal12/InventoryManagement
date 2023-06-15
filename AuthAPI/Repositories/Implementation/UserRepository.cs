@@ -16,7 +16,15 @@ namespace AuthAPI.Repositories.Implementation
 
         public async Task<UserModel> GetUserByUsername(string username)
         {
-            return await _context.Users.FirstOrDefaultAsync(u => u.Username == username);
+            try
+            {
+                return await _context.Users.FirstOrDefaultAsync(u => u.Username == username);
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
         }
 
         public async Task CreateUser(UserModel user)

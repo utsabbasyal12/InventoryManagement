@@ -1,5 +1,8 @@
-﻿namespace AuthAPI.API.RequestModel
+﻿using System.ComponentModel.DataAnnotations.Schema;
+
+namespace AuthAPI.API.RequestModel
 {
+    [Table("tblUser", Schema = "Auth")]
     public class UserModel
     {
         public int Id { get; set; }
