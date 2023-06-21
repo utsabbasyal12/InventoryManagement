@@ -1,6 +1,8 @@
 ﻿using AuthAPI.API.RequestModel;
 using AuthAPI.Data;
 using AuthAPI.Repositories.Interface;
+using AuthAPI.Services.Implementation;
+using AuthAPI.Services.Interface;
 using Microsoft.EntityFrameworkCore;
 
 namespace AuthAPI.Repositories.Implementation
@@ -26,7 +28,6 @@ namespace AuthAPI.Repositories.Implementation
                 throw;
             }
         }
-
         public async Task CreateUser(UserModel user)
         {
             _context.Users.Add(user);
