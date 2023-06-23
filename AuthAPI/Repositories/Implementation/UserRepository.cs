@@ -3,6 +3,7 @@ using AuthAPI.Data;
 using AuthAPI.Repositories.Interface;
 using AuthAPI.Services.Implementation;
 using AuthAPI.Services.Interface;
+using Azure;
 using Microsoft.EntityFrameworkCore;
 
 namespace AuthAPI.Repositories.Implementation
@@ -16,15 +17,15 @@ namespace AuthAPI.Repositories.Implementation
             _context = context;
         }
 
-        public async Task<UserModel> GetUserByUsername(string username)
+        public async Task<UserModel> GetUserByUsername(string? username)
         {
             try
             {
-                return await _context.Users.FirstOrDefaultAsync(u => u.Username == username);
+                var user =  await _context.Users.FirstOrDefaultAsync(u => u.Username == username);
+                return user;
             }
             catch (Exception)
             {
-
                 throw;
             }
         }

@@ -20,7 +20,7 @@ namespace AuthAPI.API.Controllers
             _userServices = userServices;
         }
 
-        [HttpPost]
+        [HttpPost("Register")]
         [AllowAnonymous]
         public async Task<IActionResult> Register(UserModel userDto)
         {
@@ -47,7 +47,7 @@ namespace AuthAPI.API.Controllers
         {
 
         }*/
-        [HttpPost]
+        [HttpPost("Login")]
         [AllowAnonymous]
         public IActionResult Login(UserModel model)
         {

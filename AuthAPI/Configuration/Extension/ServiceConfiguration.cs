@@ -13,7 +13,7 @@ namespace AuthAPI.Configuration.Extension
         {
             services.AddDbContext<ApplicationDbContext>(item => item.UseSqlServer(configuration.GetConnectionString("DefaultConnection")));
             services.AddTransient<IUserRepository, UserRepository>();
-            /*services.AddTransient<IUserServices, UserServices>();*/
+            services.AddTransient<IUserServices, UserServices>();
             return services;
         }
     }
