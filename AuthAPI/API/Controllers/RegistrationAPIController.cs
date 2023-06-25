@@ -37,16 +37,10 @@ namespace AuthAPI.API.Controllers
                 // Set other properties as needed
             };
 
-            await _userRepository.CreateUser(user);
+            await _userServices.AddUser(user);
 
             return Ok("User registered successfully.");
         }
-        /*[HttpPost]
-        [AllowAnonymous]
-        public async Task<IActionResult> Login(UserModel user)
-        {
-
-        }*/
         [HttpPost("Login")]
         [AllowAnonymous]
         public IActionResult Login(UserModel model)

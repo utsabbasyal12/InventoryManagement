@@ -5,6 +5,6 @@ namespace AuthAPI.Services.Interface
     public interface IUserServices
     {
         Task<UserModel> GetUserByUsername(string username);
-        void AddUser(UserModel user);
+        Task AddUser(UserModel user);
     }
 }

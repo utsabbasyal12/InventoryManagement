@@ -22,9 +22,9 @@ namespace AuthAPI.Services.Implementation
             return user;
         }
 
-        public void AddUser(UserModel user)
+        public async Task AddUser(UserModel user)
         {
-            _userRepo.CreateUser(user);
+            await _userRepo.CreateUser(user);
         }
     }
 }
