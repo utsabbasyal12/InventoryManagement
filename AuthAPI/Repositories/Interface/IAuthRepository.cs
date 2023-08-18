@@ -1,6 +1,6 @@
 ﻿namespace AuthAPI.Repositories.Interface
 {
-    public interface ITestingRepository
+    public interface IAuthRepository
     {
     }
 }

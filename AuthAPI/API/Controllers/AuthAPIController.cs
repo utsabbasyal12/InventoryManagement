@@ -5,7 +5,7 @@ namespace AuthAPI.API.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class TestingController : ControllerBase
+    public class AuthAPIController : ControllerBase
     {
     }
 }

@@ -2,7 +2,7 @@
 
 namespace AuthAPI.Repositories.Implementation
 {
-    public class TestingRepository : ITestingRepository
+    public class AuthRepository : IAuthRepository
     {
     }
 }
