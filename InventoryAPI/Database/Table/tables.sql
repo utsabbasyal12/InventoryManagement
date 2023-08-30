@@ -10,7 +10,7 @@ ShopName NVARCHAR(100) NOT NULL
 --table Categories
 CREATE TABLE tblCategories(
 CategoryId INT IDENTITY(1,1) PRIMARY KEY,
-NAME NVARCHAR(MAX) NOT NULL
+Name NVARCHAR(MAX) NOT NULL
 )
 --table Products
 CREATE TABLE tblProducts(
