@@ -9,13 +9,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AuthAPI", "AuthAPI\AuthAPI.
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InventoryAPI", "InventoryAPI\InventoryAPI.csproj", "{281E822A-AC85-4B4F-87C9-688E6A14B827}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shared", "Shared\Shared.csproj", "{E96012FD-92C6-40EE-99ED-CF7037875D45}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Shared", "Shared\Shared.csproj", "{E96012FD-92C6-40EE-99ED-CF7037875D45}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Commom", "Commom", "{B5FA98E7-A162-44CC-9C73-848154C949FD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InventoryManagement.Domain", "InventoryManagement.Domin\InventoryManagement.Domain.csproj", "{B8F9E534-1102-47B5-B785-5E18D9A3833B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InventoryManagement.Domain", "InventoryManagement.Domin\InventoryManagement.Domain.csproj", "{B8F9E534-1102-47B5-B785-5E18D9A3833B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InventoryManagement.DataAccess", "InventoryManagement.DataAccess\InventoryManagement.DataAccess.csproj", "{DE2F364C-BD90-4D5B-BBBB-D73BCE4AA1A4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InventoryManagement.DataAccess", "InventoryManagement.DataAccess\InventoryManagement.DataAccess.csproj", "{DE2F364C-BD90-4D5B-BBBB-D73BCE4AA1A4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UI", "UI", "{F8DA9C49-7810-4DCA-A00B-789996DC4A16}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
